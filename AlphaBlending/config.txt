@@ -1,0 +1,31 @@
+#Aplicar efecto Alpha blending a dos imagenes
+#BACK = Imagen de fondo
+#FORE = Imagen en primer plano
+#DIR  = Directorio de salida
+#ALPHA= Intensidad de el efecto transparente
+#CONF 1 = alpha de izquierda a derecha
+#CONF 2 = alpha de derecha a izquierda
+#CONF 3 = arriba hacia abajo
+#CONF 4 = abajo hacia arriba
+#si CONF es mayor a 4 o menor a cero CONF se igualará automáticamente a 0
+#El efecto alpha solo podrá estar dentro del rango 0<=alpha<=1
+#En caso de elegir una configuración valida, el valor alpha de este archivo se ignora y se controla automáticamente desde el programa 
+
+#PARAMETROS
+BACK /Volumes/ARCHIVOS/Imágenes/mario.jpg
+FORE /Volumes/ARCHIVOS/Imágenes/mario-wall.jpg
+DIR /Volumes/ARCHIVOS/Imágenes/marioAlpha.jpg
+
+-BACK C:\temp\CIRCLE1.jpg
+-FORE C:\temp\CIRCLE2.jpg
+-DIR C:\temp\CIRCLE_ALPHA.jpg
+-ALPHA 0.50
+-MOSAICO 1X1
+
+#PARAMETROS OBLIGATORIOS
+#EN ESTE EL EFECTO LA CONSTANTE ALPHA SE IGUALARÁ A 0.5
+#EL EFECTO SE APLICARA EN TODA LA IMAGEN
+#-BACK C:\temp\\r.jpg
+#-FORE C:\temp\\a.jpg
+#-DIR C:\temp\\alpha.img
+#aplicar efecto con imagenes de diferente tamño cn posibilidad de elegir la cantidad de veces que se repetira

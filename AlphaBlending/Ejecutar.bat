@@ -1,0 +1,1 @@
+Mostrar.bat -CONFIG config.txt
